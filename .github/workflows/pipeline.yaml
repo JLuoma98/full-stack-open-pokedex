@@ -19,6 +19,8 @@ jobs:
           heroku_app_name: "polar-falls-72283"
           heroku_email: "jere.luoma@gmail.com"
           healthcheck: "https://polar-falls-72283.herokuapp.com/health"
+          checkstring: "ok"
+          rollbackonhealthcheckfailed: true
       - name: npm install
         run: npm install
       - name: lint
