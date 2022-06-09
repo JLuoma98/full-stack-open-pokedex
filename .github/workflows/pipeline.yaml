@@ -27,3 +27,5 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm run start-prod
+      - name: heroku push
+        run: git push heroku main
